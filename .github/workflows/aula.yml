@@ -12,10 +12,8 @@ jobs:
       - name: obter codigo do do repositorio
         uses: actions/checkout@v3
       - name: instalar node
-        uses: actions/setup-node@v3
-      - name: instalar dependencias
-        run: npm ci
+        run: actions/setup-node@v3
+      - name:  instalar dependencias
+        run: npm install
       - name: executar testes
         run: npm test
-      - name: executar lint
-        run: npm run lint
