@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="1" failures="0" errors="0" time="0.125">
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-05-15T12:13:55" time="0.103" tests="1">
+<testsuites name="jest tests" tests="1" failures="0" errors="0" time="0.124">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-05-15T12:17:19" time="0.101" tests="1">
     <testcase classname=" Soma de dois numeros 1 + 2 = 3" name=" Soma de dois numeros 1 + 2 = 3" time="0.001">
     </testcase>
   </testsuite>
