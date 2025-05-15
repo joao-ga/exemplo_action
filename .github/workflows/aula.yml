@@ -12,8 +12,10 @@ jobs:
       - name: obter codigo do do repositorio
         uses: actions/checkout@v3
       - name: instalar node
-        run: actions/setup-node@v3
-      - name:  instalar dependencias
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: instalar dependencias
         run: npm install
       - name: executar testes
         run: npm test
@@ -21,6 +23,6 @@ jobs:
         uses: dorny/test-reporter@v1
         if: success() || failure()
         with:
-          name: Jest 
+          name: Jest
           reporter: junit
-          output-file: junit.xml
+          path: junit.xml
