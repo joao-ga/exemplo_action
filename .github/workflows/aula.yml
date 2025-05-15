@@ -1,0 +1,21 @@
+name: Teste unitário e lint
+
+on: push
+
+jobs:
+  testando_codigo:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    steps:
+      - name: listar diretorio
+        run: ls -la
+      - name: obter codigo do do repositorio
+        uses: actions/checkout@v3
+      - name: instalar node
+        run: actions/setup-node@v3
+      - name:  instalar dependencias
+        run: npm ci
+      - name: executar testes
+        run: npm test
+      - name: executar lint
+        run: npm run lint

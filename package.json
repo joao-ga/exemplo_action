@@ -1,0 +1,28 @@
+{
+  "name": "exemplo_action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --ci --reporters=jest-junit",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joao-ga/exemplo_action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joao-ga/exemplo_action/issues"
+  },
+  "homepage": "https://github.com/joao-ga/exemplo_action#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.26.0",
+    "eslint": "^9.26.0",
+    "globals": "^16.1.0",
+    "jest": "^29.7.0",
+    "jest-junit": "^16.0.0"
+  }
+}
